@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS 動畫展示</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .box {
+            padding: 40px;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            border-radius: 8px;
+        }
+        .box1 { background-color: #FF6347; }
+        .box2 { background-color: #4682B4; }
+        .box3 { background-color: #32CD32; }
+        .box4 { background-color: #FFD700; }
+        .box5 { background-color: #EE82EE; }
+        .box6 { background-color: #FF4500; }
+        .box7 { background-color: #7B68EE; }
+        .box8 { background-color: #2E8B57; }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="container mt-3">
+        <h1>AOS 動畫展示</h1>
+        <p>AOS 是一個簡單的滾動動畫庫，可以讓元素在進入視窗時自動展示動畫效果。以下展示了不同的動畫效果。</p>
+
+        <!-- 各種 AOS 動畫展示 -->
+        <div class="box box1" data-aos="fade-up">Fade Up</div>
+        <div class="box box2" data-aos="fade-down">Fade Down</div>
+        <div class="box box3" data-aos="fade-left">Fade Left</div>
+        <div class="box box4" data-aos="fade-right">Fade Right</div>
+        
+        <div class="box box5" data-aos="zoom-in">Zoom In</div>
+        <div class="box box6" data-aos="zoom-in-up">Zoom In Up</div>
+        <div class="box box7" data-aos="flip-left">Flip Left</div>
+        <div class="box box8" data-aos="flip-right">Flip Right</div>
+
+        <!-- 更多展示效果 -->
+        <div class="box box1" data-aos="slide-up">Slide Up</div>
+        <div class="box box2" data-aos="slide-down">Slide Down</div>
+        <div class="box box3" data-aos="slide-left">Slide Left</div>
+        <div class="box box4" data-aos="slide-right">Slide Right</div>
+        
+        <div class="box box5" data-aos="flip-up">Flip Up</div>
+        <div class="box box6" data-aos="flip-down">Flip Down</div>
+        <div class="box box7" data-aos="zoom-out">Zoom Out</div>
+        <div class="box box8" data-aos="fade-zoom-in">  Fade Zoom In</div>
+    </div>
+
+    <!-- 引入 AOS 動畫 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="navbar.js"></script>
+</body>
+
+</html>

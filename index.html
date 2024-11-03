@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 套件介紹網站</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 背景設置 */
+        body {
+            background: linear-gradient(to right, #f0f4fd, #d9e7fa);
+            font-family: Arial, sans-serif;
+            padding-top: 56px;
+        }
+
+        /* 頁面標題樣式 */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color: #333;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px #bbb;
+        }
+
+        /* 卡片樣式 */
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* 滑鼠懸停時的卡片效果 */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #0056b3;
+            font-weight: 600;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* 按鈕樣式 */
+        .btn-primary {
+            background-color: #0056b3;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #003e8a;
+        }
+
+        /* Container 間距 */
+        .container {
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar 位置 -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container">
+        <h1>JS 套件介紹網站</h1>
+        <p class="text-center">選擇下方卡片以查看不同的插件介紹！</p>
+        <div class="row">
+            <!-- 卡片 1：Validator -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Validator</h5>
+                        <p class="card-text">一個強大的驗證插件，用於檢查表單輸入的有效性。</p>
+                        <a href="validator.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 2：文字轉語音 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">文字轉語音</h5>
+                        <p class="card-text">使用 Web Speech API 將文字轉換為語音。</p>
+                        <a href="text-to-speech.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 3：Lottie 動畫 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lottie 動畫</h5>
+                        <p class="card-text">展示高品質的 JSON 動畫，適合增強網頁效果。</p>
+                        <a href="lottie.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 4：Lazy-loading 懶加載 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lazy-loading 懶加載</h5>
+                        <p class="card-text">使用 Intersection Observer 實現的懶加載效果。</p>
+                        <a href="lazy-loading.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 5：jQuery -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery</h5>
+                        <p class="card-text">快速簡便的 JavaScript 庫，用於簡化 DOM 操作。</p>
+                        <a href="jquery.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 6：CSS Grid -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS Grid</h5>
+                        <p class="card-text">網格佈局的強大工具，用於創建響應式網頁結構。</p>
+                        <a href="grid.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 7：Font Awesome -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Font Awesome</h5>
+                        <p class="card-text">提供豐富的圖標字型，用於增強網站設計的視覺效果。</p>
+                        <a href="font-awesome.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 8：Datepicker 日期選擇器 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Datepicker</h5>
+                        <p class="card-text">輕鬆選擇日期的插件，用於提升用戶體驗。</p>
+                        <a href="datepicker.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 9：Chart.js 圖表 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Chart.js 圖表</h5>
+                        <p class="card-text">使用 Chart.js 繪製各種類型的圖表。</p>
+                        <a href="chart.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 10：Bootstrap -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">強大的前端框架，用於快速開發響應式網站。</p>
+                        <a href="bootstrap.html" class="btn btn-primary">查看詳細</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

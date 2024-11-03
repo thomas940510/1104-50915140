@@ -1,0 +1,72 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1.display-4 {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.lead {
+    color: #7f8c8d;
+}
+
+.card {
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+    color: #3498db;
+    border-color: #3498db;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.aos-card {
+    background-color: #eaf2f8;
+}
+
+.tts-card {
+    background-color: #f9ebea;
+}
+
+.lottie-card {
+    background-color: #eafaf1;
+}
+
+.chart-card {
+    background-color: #e8f8f5;
+}
+
+.lazy-card {
+    background-color: #fef9e7;
+}
+
+.axios-card {
+    background-color: #f5eef8;
+}
+
+.d3-card {
+    background-color: #ebf5fb;
+}
+
+.jquery-card {
+    background-color: #fdf2e9;
+}
+
+.bootstrap-card {
+    background-color: #f8f9fa;
+}
